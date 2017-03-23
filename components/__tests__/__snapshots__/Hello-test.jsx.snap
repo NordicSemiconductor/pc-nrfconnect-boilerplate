@@ -1,0 +1,5 @@
+exports[`Hello should render component 1`] = `
+<h3>
+  default title
+</h3>
+`;
