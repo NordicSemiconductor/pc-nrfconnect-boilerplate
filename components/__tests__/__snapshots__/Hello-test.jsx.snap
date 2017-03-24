@@ -1,0 +1,11 @@
+exports[`Hello should render component 1`] = `
+<h3>
+  default title
+</h3>
+`;
+
+exports[`Hello should render component 2`] = `
+<h3>
+  Test title
+</h3>
+`;
