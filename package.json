@@ -1,13 +1,13 @@
 {
   "name": "pc-nrfconnect-app-boilerplate",
   "version": "1.0.0",
-  "description": "A natural first choice for BLE development",
+  "description": "Starting point for creating nRF Connect apps",
   "repository": {
     "type": "git",
     "url": "https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate.git"
   },
   "author": "Nordic Semiconductor ASA",
-  "license": "ISC",
+  "license": "Proprietary",
   "main": "dist/bundle.js",
   "scripts": {
     "dev": "webpack --watch",
