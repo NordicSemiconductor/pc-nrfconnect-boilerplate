@@ -44,4 +44,9 @@ describe('Hello', () => {
             <Hello />,
         )).toMatchSnapshot();
     });
+    it('should render component', () => {
+        expect(renderer.create(
+            <Hello title="Test title" />,
+        )).toMatchSnapshot();
+    });
 });
