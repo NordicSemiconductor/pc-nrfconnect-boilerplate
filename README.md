@@ -1,15 +1,36 @@
 # pc-nrfconnect-boilerplate
 
-This project provides a quick initial setup for developing applications that are loaded by pc-nrfconnect-core.
+This project provides a quick initial setup for developing applications that are loaded by [pc-nrfconnect-core](https://github.com/NordicSemiconductor/pc-nrfconnect-core).
 
-The provided `index.jsx` file covers functions that are mapped by Core to decorate the available React components.
+Documentation about [how to create apps](https://github.com/NordicSemiconductor/pc-nrfconnect-core#creating-apps).
 
-The decorator functions are meant to return higher order components wrapping the original components provided by Core.
+This boilerplate provides:
+- an `index.jsx` which contains an empty implementation of all functions in the API
+- configuration for build tools (babel/webpack/eslint)
+- basic styling
+- unit test framework
 
-It is possible the define new properties to these components by the means of the `map${name}Dispatch()` functions.
+## Quick start
 
-State mapper `map${name}State()` functions are mapping the redux store's state to the individual components' properties.
+1. Create the app root directory if it does not already exist:
 
-The reducer functions are invoked for all actions triggered by either Core or the application. Reducers can implement handlers or modify the state accordingly.
+        mkdir -p $HOME/.nrfconnect-apps/local
 
-The `middleware()` function intercepts all actions globally.
+2. Download [this project](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate/archive/master.zip) and extract it under `local` in previous step.
+
+3. Modify relevant properties in `package.json`
+4. Install development dependencies:
+
+        npm install
+
+5. Build by the following command, which keeps watching for modification:
+
+        npm run dev
+
+6. For one time or continuous testing:
+
+        npm test
+        npm run test-watch
+
+7. Successful build is ready to be loaded by *Core*.
+8. Any function that is not needed can be removed from `index.jsx`.
