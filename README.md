@@ -16,7 +16,15 @@ This boilerplate provides:
 
         mkdir -p $HOME/.nrfconnect-apps/local
 
-2. Download [this project](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate/archive/master.zip) and extract it under `local` in previous step.
+2. Download this project by
+    - cloning this project under aforementioned directory and remove .git version control
+
+            cd $HOME/.nrfconnect-apps/local
+            git clone https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate.git my-new-app
+            cd my-new-app
+            rm -rf .git
+
+    - or downloading [the latest archive](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate/archive/master.zip) and extract it under `$HOME/.nrfconnect-apps/local/my-new-app`.
 
 3. Modify relevant properties in `package.json`
 4. Install development dependencies:
