@@ -47,10 +47,10 @@ const logSelected = item => (
 /* eslint react/prop-types: 0 */
 
 /**
- * The application needs to export the `config` object.
- *
- * All the provided decorator/mapper/reducer functions are optional,
- * whichever of these functions are not used/needed can be removed.
+ * All properties/functions below are optional, and can be removed
+ * if the app does not need them. However, one of config.firmwareData
+ * or config.firmwarePaths must be provided for programming to work when
+ * selecting serial port.
  */
 export default {
     // config shall contain either firmwareData or firmwarePaths, but not both!
@@ -222,7 +222,8 @@ export default {
                 return state;
         }
     },
-    reduceApp: (state, action) => {
+    // Note: initial state of the application needs to be provided
+    reduceApp: (state = {}, action) => {
         switch (action.type) {
             default:
                 return state;
