@@ -1,7 +1,8 @@
 {
-  "name": "pc-nrfconnect-app-boilerplate",
+  "name": "pc-nrfconnect-boilerplate",
   "version": "1.0.0",
   "description": "Starting point for creating nRF Connect apps",
+  "displayName": "Your App Name",
   "repository": {
     "type": "git",
     "url": "https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate.git"
