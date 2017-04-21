@@ -44,26 +44,17 @@ const logSelected = item => (
     )
 );
 
-/* eslint react/prop-types: 0 */
+/* eslint-disable react/prop-types */
 
 /**
- * All properties/functions below are optional, and can be removed
- * if the app does not need them. However, one of config.firmwareData
- * or config.firmwarePaths must be provided for programming to work when
- * selecting serial port.
+ * In this boilerplate app, we show a "dummy" implementation of all available
+ * functions. By implementing one or more of the functions below, you can
+ * add your own behavior.
+ *
+ * All of these functions are optional. You could just export an empty object
+ * here if you want to start from scratch with the default behavior.
  */
 export default {
-    // config shall contain either firmwareData or firmwarePaths, but not both!
-    config: {
-        // firmwareData: {
-        //     nrf51: '',
-        //     nrf52: '',
-        // },
-        firmwarePaths: {
-            nrf51: './relative-path-to-51-hex-file',
-            nrf52: './relative-path-to-52-hex-file',
-        },
-    },
     decorateFirmwareDialog: FirmwareDialog => (
         props => (
             <FirmwareDialog {...props} />
@@ -230,9 +221,6 @@ export default {
         }
     },
     middleware: store => next => action => { // eslint-disable-line
-        if (!action) {
-            return;
-        }
         next(action);
     },
 };
