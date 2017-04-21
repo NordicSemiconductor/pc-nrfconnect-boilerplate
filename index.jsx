@@ -55,6 +55,12 @@ const logSelected = item => (
  * here if you want to start from scratch with the default behavior.
  */
 export default {
+    onInit: (dispatch, getState, { logger }) => {
+        logger.info('App initializing');
+    },
+    onReady: (dispatch, getState, { logger }) => {
+        logger.info('App initialized');
+    },
     decorateFirmwareDialog: FirmwareDialog => (
         props => (
             <FirmwareDialog {...props} />
