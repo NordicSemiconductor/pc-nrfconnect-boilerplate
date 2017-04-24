@@ -247,9 +247,3 @@ describe('app.middleware', () => {
         expect(app.middleware).toBeInstanceOf(Function);
     });
 });
-
-describe('app.config', () => {
-    it('should have configuration', () => {
-        expect(app.config).toBeInstanceOf(Object);
-    });
-});
