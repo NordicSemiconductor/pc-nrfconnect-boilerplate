@@ -35,11 +35,12 @@
  */
 
 import React from 'react';
+import { logger } from 'nrfconnect/core';
 import Hello from './components/Hello';
 import './resources/css/index.less';
 
 const logSelected = item => (
-    (dispatch, getState, { logger }) => (
+    () => (
         logger.info(`Selected ${item}`)
     )
 );
@@ -55,10 +56,10 @@ const logSelected = item => (
  * here if you want to start from scratch with the default behavior.
  */
 export default {
-    onInit: (dispatch, getState, { logger }) => {
+    onInit: () => {
         logger.info('App initializing');
     },
-    onReady: (dispatch, getState, { logger }) => {
+    onReady: () => {
         logger.info('App initialized');
     },
     decorateFirmwareDialog: FirmwareDialog => (
