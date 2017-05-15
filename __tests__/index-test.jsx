@@ -224,24 +224,6 @@ describe('app.SidePanel', () => {
     });
 });
 
-describe('app.reducers', () => {
-    it('should implement reduceApp', () => {
-        expect(app.reduceApp).toBeInstanceOf(Function);
-    });
-    it('should implement reduceFirmwareDialog', () => {
-        expect(app.reduceFirmwareDialog).toBeInstanceOf(Function);
-    });
-    it('should implement reduceLog', () => {
-        expect(app.reduceLog).toBeInstanceOf(Function);
-    });
-    it('should implement reduceNavMenu', () => {
-        expect(app.reduceNavMenu).toBeInstanceOf(Function);
-    });
-    it('should implement reduceSerialPort', () => {
-        expect(app.reduceSerialPort).toBeInstanceOf(Function);
-    });
-});
-
 describe('app.middleware', () => {
     it('should implement middleware', () => {
         expect(app.middleware).toBeInstanceOf(Function);
