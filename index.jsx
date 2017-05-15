@@ -39,12 +39,6 @@ import { logger } from 'nrfconnect/core';
 import Hello from './components/Hello';
 import './resources/css/index.less';
 
-const logSelected = item => (
-    () => (
-        logger.info(`Selected ${item}`)
-    )
-);
-
 /* eslint-disable react/prop-types */
 
 /**
@@ -142,7 +136,7 @@ export default {
     }),
     mapNavMenuDispatch: (dispatch, props) => ({
         ...props,
-        onItemSelected: item => dispatch(logSelected(item)),
+        onItemSelected: item => logger.info(`Selected ${item}`),
     }),
     decorateNavMenuItem: NavMenuItem => (
         props => (
