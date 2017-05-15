@@ -1,11 +1,11 @@
-exports[`Hello should render component 1`] = `
+exports[`Hello should render component with custom title 1`] = `
 <h3>
-  default title
+  Test title
 </h3>
 `;
 
-exports[`Hello should render component 2`] = `
+exports[`Hello should render component with default title 1`] = `
 <h3>
-  Test title
+  default title
 </h3>
 `;
