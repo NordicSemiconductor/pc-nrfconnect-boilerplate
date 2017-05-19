@@ -39,12 +39,6 @@ import { logger } from 'nrfconnect/core';
 import Hello from './components/Hello';
 import './resources/css/index.less';
 
-const logSelected = item => (
-    () => (
-        logger.info(`Selected ${item}`)
-    )
-);
-
 /* eslint-disable react/prop-types */
 
 /**
@@ -142,7 +136,7 @@ export default {
     }),
     mapNavMenuDispatch: (dispatch, props) => ({
         ...props,
-        onItemSelected: item => dispatch(logSelected(item)),
+        onItemSelected: item => logger.info(`Selected ${item}`),
     }),
     decorateNavMenuItem: NavMenuItem => (
         props => (
@@ -178,48 +172,6 @@ export default {
     mapSidePanelDispatch: (dispatch, props) => ({
         ...props,
     }),
-    reduceFirmwareDialog: (state, action) => {
-        switch (action.type) {
-            case 'FIRMWARE_DIALOG_SHOW':
-            case 'FIRMWARE_DIALOG_HIDE':
-            case 'FIRMWARE_DIALOG_UPDATE_REQUESTED':
-            case 'FIRMWARE_DIALOG_UPDATE_SUCCESS':
-            case 'FIRMWARE_DIALOG_UPDATE_ERROR':
-            default:
-                return state;
-        }
-    },
-    reduceLog: (state, action) => {
-        switch (action.type) {
-            case 'LOG_ADD_ENTRIES':
-            case 'LOG_OPEN_FILE':
-            case 'LOG_OPEN_FILE_SUCCESS':
-            case 'LOG_OPEN_FILE_ERROR':
-            case 'LOG_CLEAR_ENTRIES':
-            case 'LOG_TOGGLE_AUTOSCROLL':
-            default:
-                return state;
-        }
-    },
-    reduceNavMenu: (state, action) => {
-        switch (action.type) {
-            case 'NAV_MENU_ITEM_SELECTED':
-            default:
-                return state;
-        }
-    },
-    reduceSerialPort: (state, action) => {
-        switch (action.type) {
-            case 'SERIAL_PORTS_LOAD':
-            case 'SERIAL_PORTS_LOAD_SUCCESS':
-            case 'SERIAL_PORTS_LOAD_ERROR':
-            case 'SERIAL_PORT_SELECTOR_TOGGLE_EXPANDED':
-            case 'SERIAL_PORT_SELECTED':
-            case 'SERIAL_PORT_DESELECTED':
-            default:
-                return state;
-        }
-    },
     // Note: initial state of the application needs to be provided
     reduceApp: (state = {}, action) => {
         switch (action.type) {

@@ -39,12 +39,12 @@ import renderer from 'react-test-renderer';
 import Hello from '../Hello';
 
 describe('Hello', () => {
-    it('should render component', () => {
+    it('should render component with default title', () => {
         expect(renderer.create(
             <Hello />,
         )).toMatchSnapshot();
     });
-    it('should render component', () => {
+    it('should render component with custom title', () => {
         expect(renderer.create(
             <Hello title="Test title" />,
         )).toMatchSnapshot();
