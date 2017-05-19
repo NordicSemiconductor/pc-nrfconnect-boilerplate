@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`app.FirmwareDialog should render component 1`] = `<div />`;
 
 exports[`app.LogEntry should render component 1`] = `<div />`;
@@ -28,7 +30,8 @@ exports[`app.NavMenu should render component 1`] = `
         "text": "About",
       },
     ]
-  } />
+  }
+/>
 `;
 
 exports[`app.NavMenuItem should render component 1`] = `<div />`;
