@@ -24,5 +24,10 @@
   "devDependencies": {
     "pc-nrfconnect-devdep": "https://github.com/NordicSemiconductor/pc-nrfconnect-devdep.git"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "moduleNameMapper": {
+      "nrfconnect/core": "<rootDir>/mocks/coreMock.js"
+    }
+  }
 }
