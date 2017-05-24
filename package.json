@@ -13,6 +13,11 @@
     "nrfconnect": "2.x"
   },
   "main": "dist/bundle.js",
+  "files": [
+    "dist/",
+    "icon.png",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "webpack --watch",
     "webpack": "webpack",
