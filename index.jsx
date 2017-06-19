@@ -154,11 +154,6 @@ export default {
     mapSerialPortSelectorDispatch: (dispatch, props) => ({
         ...props,
     }),
-    decorateSerialPortSelectorItem: SerialPortSelectorItem => (
-        props => (
-            <SerialPortSelectorItem {...props} />
-        )
-    ),
     decorateSidePanel: SidePanel => (
         props => (
             <SidePanel {...props}>
