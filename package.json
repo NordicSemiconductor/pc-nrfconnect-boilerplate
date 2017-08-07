@@ -25,12 +25,16 @@
     "lint": "eslint components reducers",
     "test": "jest --testResultsProcessor jest-bamboo-formatter",
     "test-watch": "jest --watch",
-    "clean": "npm install rimraf && npm run clean-dist && npm run clean-modules",
+    "clean": "npm run clean-dist && npm run clean-modules",
     "clean-dist": "rimraf dist",
     "clean-modules": "rimraf \"node_modules/!(rimraf|.bin)\""
   },
   "devDependencies": {
-    "pc-nrfconnect-devdep": "https://github.com/NordicSemiconductor/pc-nrfconnect-devdep.git#v1.0.0"
+    "eslint": "^4.4.0",
+    "jest": "^20.0.4",
+    "pc-nrfconnect-devdep": "https://github.com/NordicSemiconductor/pc-nrfconnect-devdep.git#v1.0.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.4.1"
   },
   "dependencies": {},
   "jest": {
