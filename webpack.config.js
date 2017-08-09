@@ -19,7 +19,7 @@ function createExternals() {
     ];
 
     // Libs provided by the app at runtime
-    const appLibs = Object.keys(dependencies);
+    const appLibs = Object.keys(dependencies || {});
 
     return coreLibs.concat(appLibs).reduce((prev, lib) => (
         Object.assign(prev, { [lib]: lib })
