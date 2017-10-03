@@ -1,5 +1,7 @@
 # nRF Connect boilerplate app
 
+[![Build Status](https://travis-ci.org/NordicSemiconductor/pc-nrfconnect-boilerplate.svg?branch=master)](https://travis-ci.org/NordicSemiconductor/pc-nrfconnect-boilerplate)
+
 This project provides a starting point for developing apps that can be launched by [nRF Connect](https://github.com/NordicSemiconductor/pc-nrfconnect-core). See the [app creation documentation](https://github.com/NordicSemiconductor/pc-nrfconnect-core#creating-apps) for more information about apps and the available API.
 
 This boilerplate provides:
