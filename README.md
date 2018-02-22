@@ -11,6 +11,13 @@ This boilerplate provides:
 - basic styling (less)
 - unit testing (jest)
 
+## Dependencies
+
+To build this project you will need to install the following tools:
+
+* Node.js (>=6.9)
+* npm (>=5.6.0) / yarn (>=1.4.0)
+
 ## Quick start
 
 1. Create the `.nrfconnect-apps/local` directory if it does not already exist:
