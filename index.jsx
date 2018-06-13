@@ -263,8 +263,8 @@ export function decorateSidePanel(SidePanel) {
 // ============================================
 
 /**
- * Passes state data as props to the DeviceSelector component. To see the
- * default props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * DeviceSelector component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/DeviceSelectorContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -278,8 +278,8 @@ export function mapDeviceSelectorState(state, props) {
 }
 
 /**
- * Passes state data as props to the LogHeader component. To see the
- * default props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * LogHeader component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/LogHeaderContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -293,8 +293,8 @@ export function mapLogHeaderState(state, props) {
 }
 
 /**
- * Passes state data as props to the LogViewer component. To see default
- * props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * LogViewer component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/LogViewerContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -308,8 +308,8 @@ export function mapLogViewerState(state, props) {
 }
 
 /**
- * Passes state data as props to the MainView component. To see default
- * props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * MainView component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/MainViewContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -323,8 +323,8 @@ export function mapMainViewState(state, props) {
 }
 
 /**
- * Passes state data as props to the NavMenu component. To see default
- * props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * NavMenu component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/NavMenuContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -338,8 +338,8 @@ export function mapNavMenuState(state, props) {
 }
 
 /**
- * Passes state data as props to the SidePanel component. To see default
- * props, refer to `mapStateToProps` in:
+ * Receives the state object and returns props that will be passed to the
+ * SidePanel component. See also the default `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/SidePanelContainer.js
  *
  * @param {Object} state The Redux state object.
@@ -357,8 +357,9 @@ export function mapSidePanelState(state, props) {
 // ===================================
 
 /**
- * Passes props for dispatching actions to the DeviceSelector component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the DeviceSelector component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/DeviceSelectorContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -372,8 +373,9 @@ export function mapDeviceSelectorDispatch(dispatch, props) {
 }
 
 /**
- * Passes props for dispatching actions to the LogHeader component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the LogHeader component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/LogHeaderContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -387,8 +389,9 @@ export function mapLogHeaderDispatch(dispatch, props) {
 }
 
 /**
- * Passes props for dispatching actions to the LogViewer component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the LogViewer component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/LogViewerContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -402,8 +405,9 @@ export function mapLogViewerDispatch(dispatch, props) {
 }
 
 /**
- * Passes props for dispatching actions to the MainView component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the MainView component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/MainViewContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -417,8 +421,9 @@ export function mapMainViewDispatch(dispatch, props) {
 }
 
 /**
- * Passes props for dispatching actions to the NavMenu component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the NavMenu component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/NavMenuContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -432,8 +437,9 @@ export function mapNavMenuDispatch(dispatch, props) {
 }
 
 /**
- * Passes props for dispatching actions to the SidePanel component. Refer
- * to `mapDispatchToProps` in:
+ * Receives the Redux dispatch function and returns props that will be
+ * passed to the SidePanel component. See also the default
+ * `mapDispatchToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/NavMenuContainer.js
  *
  * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
@@ -474,8 +480,8 @@ export function reduceApp(state = {}, action) {
  * it reaches the reducers. See https://redux.js.org/advanced/middleware.
  *
  * This is useful e.g. when the app wants to perform some asynchronous
- * operation when a core action is dispatched. To see which actions may
- * be intercepted, see:
+ * operation when a core action is dispatched. To see which core actions
+ * may be intercepted, see:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/tree/master/lib/windows/app/actions
  *
  * Note that the Redux store has a `dispatch` function for dispatching
