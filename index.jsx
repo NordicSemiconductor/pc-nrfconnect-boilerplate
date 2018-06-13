@@ -56,17 +56,6 @@ export default {
     onReady: () => {
         logger.info('App initialized');
     },
-    decorateFirmwareDialog: FirmwareDialog => (
-        props => (
-            <FirmwareDialog {...props} />
-        )
-    ),
-    mapFirmwareDialogState: (state, props) => ({
-        ...props,
-    }),
-    mapFirmwareDialogDispatch: (dispatch, props) => ({
-        ...props,
-    }),
     decorateLogEntry: LogEntry => (
         props => (
             <LogEntry {...props} />
@@ -143,17 +132,6 @@ export default {
             <NavMenuItem {...props} />
         )
     ),
-    decorateSerialPortSelector: SerialPortSelector => (
-        props => (
-            <SerialPortSelector {...props} />
-        )
-    ),
-    mapSerialPortSelectorState: (state, props) => ({
-        ...props,
-    }),
-    mapSerialPortSelectorDispatch: (dispatch, props) => ({
-        ...props,
-    }),
     decorateSidePanel: SidePanel => (
         props => (
             <SidePanel {...props}>
