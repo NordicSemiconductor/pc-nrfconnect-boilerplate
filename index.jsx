@@ -115,6 +115,20 @@ export function onReady(dispatch, getState) {
 // ====================
 
 /**
+ * Decorates the core DeviceSelector component, which is rendered in the
+ * top left corner of the app. See:
+ * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/components/DeviceSelector.jsx
+ *
+ * @param {Function} DeviceSelector The core DeviceSelector component.
+ * @returns {Function} A new React component.
+ */
+export function decorateDeviceSelector(DeviceSelector) {
+    return props => (
+        <DeviceSelector {...props} />
+    );
+}
+
+/**
  * Decorates the core Logo component, which is rendered in the top right
  * corner of the app. See:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/components/Logo.jsx
@@ -248,6 +262,21 @@ export function decorateSidePanel(SidePanel) {
 // ============================================
 
 /**
+ * Passes state data as props to the DeviceSelector component. To see the
+ * default props, refer to `mapStateToProps` in:
+ * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/DeviceSelectorContainer.js
+ *
+ * @param {Object} state The Redux state object.
+ * @param {Object} props The default core props.
+ * @returns {Object} Props that will be passed to the component.
+ */
+export function mapDeviceSelectorState(state, props) {
+    return {
+        ...props,
+    };
+}
+
+/**
  * Passes state data as props to the LogHeader component. To see the
  * default props, refer to `mapStateToProps` in:
  * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/LogHeaderContainer.js
@@ -325,6 +354,21 @@ export function mapSidePanelState(state, props) {
 
 // Dispatching actions from components
 // ===================================
+
+/**
+ * Passes props for dispatching actions to the DeviceSelector component. Refer
+ * to `mapDispatchToProps` in:
+ * https://github.com/NordicSemiconductor/pc-nrfconnect-core/blob/master/lib/windows/app/containers/DeviceSelectorContainer.js
+ *
+ * @param {Function} dispatch The Redux dispatch function, which may be invoked to dispatch actions.
+ * @param {Object} props The default core props
+ * @returns {Object} Props that will be passed to the component.
+ */
+export function mapDeviceSelectorDispatch(dispatch, props) {
+    return {
+        ...props,
+    };
+}
 
 /**
  * Passes props for dispatching actions to the LogHeader component. Refer
