@@ -41,6 +41,7 @@ import './resources/css/index.less';
 
 /* eslint-disable react/prop-types, no-unused-vars */
 
+
 // nRF Connect boilerplate app
 // ===========================
 //
@@ -81,6 +82,7 @@ export const config = {
         // jprog: {},
     },
 };
+
 
 // Lifecycle methods
 // =================
