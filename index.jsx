@@ -54,6 +54,33 @@ import './resources/css/index.less';
  */
 
 
+// App configuration
+// =================
+
+/**
+ * Configures which device types to show in the device selector, and how
+ * they should be set up (programmed) when selected.
+ *
+ * @description Supported properties:
+ * - `selectorTraits`: Configures which device types to show in the
+ * device selector. The config format is described on
+ * https://github.com/NordicSemiconductor/nrf-device-lister-js.
+ * - `deviceSetup`: Configures which firmware to program when a device is
+ * selected in the device selector. The config format is described on
+ * https://github.com/NordicSemiconductor/nrf-device-setup-js.
+ */
+export const config = {
+    selectorTraits: {
+        jlink: true,
+        nordicUsb: true,
+        serialport: true,
+    },
+    deviceSetup: {
+        // dfu: {},
+        // jprog: {},
+    },
+};
+
 // Lifecycle methods
 // =================
 
