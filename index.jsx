@@ -41,17 +41,18 @@ import './resources/css/index.less';
 
 /* eslint-disable react/prop-types, no-unused-vars */
 
-/*
- * In this boilerplate app, we show a "dummy" implementation of all
- * available functions. By implementing one or more of the functions
- * below, you can add your own behavior.
- *
- * All of these functions are optional, and those that are not needed
- * for customizing the app should be removed.
- *
- * The API for apps is also documented with additional examples on:
- * https://github.com/NordicSemiconductor/pc-nrfconnect-core/wiki/API-reference
- */
+// nRF Connect boilerplate app
+// ===========================
+//
+// In this boilerplate app, we show a "dummy" implementation of all
+// available functions. By implementing one or more of the functions
+// below, you can add your own behavior.
+//
+// All of these functions are optional, and those that are not needed
+// for customizing the app should be removed.
+//
+// The API for apps is also documented with additional examples on:
+// https://github.com/NordicSemiconductor/pc-nrfconnect-core/wiki/API-reference
 
 
 // App configuration
