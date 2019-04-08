@@ -1,6 +1,7 @@
 # nRF Connect boilerplate app
 
-[![Build Status](https://travis-ci.org/NordicSemiconductor/pc-nrfconnect-boilerplate.svg?branch=master)](https://travis-ci.org/NordicSemiconductor/pc-nrfconnect-boilerplate)
+[![Build Status](https://dev.azure.com/NordicSemiconductor/Wayland/_apis/build/status/pc-nrfconnect-boilerplate?branchName=master)](https://dev.azure.com/NordicSemiconductor/Wayland/_build/latest?definitionId=10&branchName=master)
+[![License](https://img.shields.io/badge/license-Modified%20BSD%20License-blue.svg)](LICENSE)
 
 This project provides a starting point for developing apps that can be launched by [nRF Connect](https://github.com/NordicSemiconductor/pc-nrfconnect-core). See the [app creation documentation](https://github.com/NordicSemiconductor/pc-nrfconnect-core#creating-apps) for more information about apps and the available API.
 
@@ -59,6 +60,6 @@ To build this project you will need to install the following tools:
 
     This will keep running and watch for changes (Ctrl+C to stop). Alternatively, to run tests just once, run `npm test`.
 
-7. Start nRF Connect and verify that your app appears in the *Launch app* screen. If the build was successful, you should be able to launch it. Chrome Developer Tools can be opened by pressing Ctrl+Alt+I (Windows/Linux) or Cmd+Option+I (macOS). 
+7. Start nRF Connect and verify that your app appears in the *Launch app* screen. If the build was successful, you should be able to launch it. Chrome Developer Tools can be opened by pressing Ctrl+Alt+I (Windows/Linux) or Cmd+Option+I (macOS).
 
 8. Add your own implementation in `index.jsx` to adjust the behavior of the app.
