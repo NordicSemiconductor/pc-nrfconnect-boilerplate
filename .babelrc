@@ -1,7 +1,5 @@
 {
-  "presets": [
-    "@babel/preset-react"
-  ],
+  "presets": [ "@babel/preset-react" ],
   "plugins": [
     "add-module-exports",
     "@babel/plugin-proposal-class-properties",
