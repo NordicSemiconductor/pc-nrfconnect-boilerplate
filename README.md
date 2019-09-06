@@ -1,23 +1,9 @@
-# nRF Connect boilerplate app
+# nRF Connect Boilerplate
 
 [![Build Status](https://dev.azure.com/NordicSemiconductor/Wayland/_apis/build/status/pc-nrfconnect-boilerplate?branchName=master)](https://dev.azure.com/NordicSemiconductor/Wayland/_build/latest?definitionId=10&branchName=master)
 [![License](https://img.shields.io/badge/license-Modified%20BSD%20License-blue.svg)](LICENSE)
 
-This project provides a starting point for developing apps that can be launched by [nRF Connect](https://github.com/NordicSemiconductor/pc-nrfconnect-core). See the [app creation documentation](https://github.com/NordicSemiconductor/pc-nrfconnect-core#creating-apps) for more information about apps and the available API.
-
-This boilerplate provides:
-
-- an empty implementation of all functions in the API (index.jsx)
-- build tools (babel/webpack/eslint)
-- basic styling (less)
-- unit testing (jest)
-
-## Dependencies
-
-To build this project you will need to install the following tools:
-
-* Node.js (>=6.9)
-* npm (>=5.6.0) / yarn (>=1.4.0)
+*nRF Connect Boilerplate* provides a starting point for developing apps that can be launched by [nRF Connect for Desktop](https://github.com/NordicSemiconductor/pc-nrfconnect-core).
 
 ## Quick start
 
@@ -63,3 +49,19 @@ To build this project you will need to install the following tools:
 7. Start nRF Connect and verify that your app appears in the *Launch app* screen. If the build was successful, you should be able to launch it. Chrome Developer Tools can be opened by pressing Ctrl+Alt+I (Windows/Linux) or Cmd+Option+I (macOS).
 
 8. Add your own implementation in `index.jsx` to adjust the behavior of the app.
+
+## Development
+
+See the [app development](https://github.com/NordicSemiconductor/pc-nrfconnect-core/wiki) pages for details on how to develop apps for the nRF Connect for Desktop framework.
+
+## Feedback
+
+Please report issues on the [DevZone](https://devzone.nordicsemi.com) portal.
+
+## Contributing
+
+See the [Contributing](https://github.com/NordicSemiconductor/pc-nrfconnect-core/wiki/Contributing) file for details.
+
+## License
+
+See the [LICENSE](LICENSE) file for details.
