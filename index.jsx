@@ -53,7 +53,7 @@ import './resources/css/index.less';
 // for customizing the app should be removed.
 //
 // The API for apps is also documented with additional examples on:
-// https://github.com/NordicSemiconductor/pc-nrfconnect-core/wiki/API-reference
+// https://nordicsemiconductor.github.io/pc-nrfconnect-docs/api_reference
 
 
 // App configuration
