@@ -1,0 +1,8 @@
+// This file is imported by Hello.jsx, and may contain styles for that component.
+
+@import "~pc-nrfconnect-shared/src/variables";
+
+.title {
+    // Just an example
+    border-left: $nordic-blue solid;
+}
