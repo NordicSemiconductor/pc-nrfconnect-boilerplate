@@ -36,7 +36,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Hello from '../Hello';
+import Hello from './Hello';
 
 describe('Hello', () => {
     it('should render component with default title', () => {
