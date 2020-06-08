@@ -34,24 +34,20 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { logger } from 'pc-nrfconnect-shared';
 
 import './hello.scss';
 
-const Hello = props => {
-    const { title } = props;
+export default () => {
+    useEffect(() => {
+        logger.info('Showing Hello pane');
+        return () => { logger.info('Hiding Hello pane'); };
+    }, []);
+
     return (
-        <h3 className="title">{ title }</h3>
+        <h3 className="title">
+            Hello World
+        </h3>
     );
 };
-
-Hello.propTypes = {
-    title: PropTypes.string,
-};
-
-Hello.defaultProps = {
-    title: 'default title',
-};
-
-export default Hello;

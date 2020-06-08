@@ -35,13 +35,10 @@
  */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Hello from './Hello';
 
-describe('Hello', () => {
-    it('has a reliable rendering', () => {
-        expect(renderer.create(
-            <Hello />,
-        )).toMatchSnapshot();
-    });
-});
+export default () => (
+    <div>
+        The side panel can be used for configurations or information
+        that are always shown to the side of the main view.
+    </div>
+);

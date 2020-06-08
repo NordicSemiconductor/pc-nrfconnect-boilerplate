@@ -1,17 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hello should render component with custom title 1`] = `
+exports[`Hello has a reliable rendering 1`] = `
 <h3
   className="title"
 >
-  Test title
-</h3>
-`;
-
-exports[`Hello should render component with default title 1`] = `
-<h3
-  className="title"
->
-  default title
+  Hello World
 </h3>
 `;
