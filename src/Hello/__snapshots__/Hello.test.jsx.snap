@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello has a reliable rendering 1`] = `
+<h3
+  className="title"
+>
+  Hello World
+</h3>
+`;

@@ -35,21 +35,9 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Hello = props => {
-    const { title } = props;
-    return (
-        <h3>{ title }</h3>
-    );
-};
-
-Hello.propTypes = {
-    title: PropTypes.string,
-};
-
-Hello.defaultProps = {
-    title: 'default title',
-};
-
-export default Hello;
+export default () => (
+    <h3>
+        So long, and thanks for all the fish
+    </h3>
+);
