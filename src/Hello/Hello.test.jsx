@@ -36,12 +36,11 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+
 import Hello from './Hello';
 
 describe('Hello', () => {
     it('has a reliable rendering', () => {
-        expect(renderer.create(
-            <Hello />,
-        )).toMatchSnapshot();
+        expect(renderer.create(<Hello />)).toMatchSnapshot();
     });
 });

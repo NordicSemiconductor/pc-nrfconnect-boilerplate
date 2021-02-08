@@ -42,12 +42,10 @@ import './hello.scss';
 export default () => {
     useEffect(() => {
         logger.info('Showing Hello pane');
-        return () => { logger.info('Hiding Hello pane'); };
+        return () => {
+            logger.info('Hiding Hello pane');
+        };
     }, []);
 
-    return (
-        <h3 className="title">
-            Hello World
-        </h3>
-    );
+    return <h3 className="title">Hello World</h3>;
 };
