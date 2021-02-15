@@ -24,6 +24,7 @@
     "build": "nrfconnect-scripts build-prod",
     "lint": "nrfconnect-scripts lint src",
     "lintfix": "nrfconnect-scripts lint --fix src",
+    "nordic-publish": "nrfconnect-scripts nordic-publish",
     "test": "nrfconnect-scripts test",
     "test-watch": "nrfconnect-scripts test --watch",
     "clean": "npm run clean-dist && npm run clean-modules",
@@ -31,10 +32,14 @@
     "clean-modules": "rimraf \"node_modules/!(rimraf|.bin)\""
   },
   "devDependencies": {
-    "pc-nrfconnect-shared": "github:NordicSemiconductor/pc-nrfconnect-shared#v4.8.2",
+    "pc-nrfconnect-shared": "github:NordicSemiconductor/pc-nrfconnect-shared#v4.17.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "eslintConfig": {
+    "extends": "./node_modules/pc-nrfconnect-shared/config/eslintrc.json"
+  },
+  "prettier": "./node_modules/pc-nrfconnect-shared/config/prettier.config.js"
 }

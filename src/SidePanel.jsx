@@ -35,10 +35,13 @@
  */
 
 import React from 'react';
+import { Group, SidePanel } from 'pc-nrfconnect-shared';
 
 export default () => (
-    <div>
-        The side panel can be used for configurations or information
-        that are always shown to the side of the main view.
-    </div>
+    <SidePanel>
+        <Group>
+            The side panel can be used for configurations or information that
+            are always shown to the side of the main view.
+        </Group>
+    </SidePanel>
 );

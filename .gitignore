@@ -1,5 +1,4 @@
-node_modules
-.idea
-dist
-jest.json
-package-lock.json
+/node_modules
+/dist
+/jest.json
+/pc-nrfconnect-boilerplate-*.tgz

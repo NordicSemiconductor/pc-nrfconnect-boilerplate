@@ -36,8 +36,4 @@
 
 import React from 'react';
 
-export default () => (
-    <h3>
-        So long, and thanks for all the fish
-    </h3>
-);
+export default () => <h3>So long, and thanks for all the fish</h3>;

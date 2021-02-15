@@ -37,10 +37,10 @@
 import React from 'react';
 import { App } from 'pc-nrfconnect-shared';
 
-import SidePanel from './SidePanel';
 import BoilerplateDeviceSelector from './BoilerplateDeviceSelector';
-import Hello from './Hello/Hello';
 import Goodbye from './Hello/Goodbye';
+import Hello from './Hello/Hello';
+import SidePanel from './SidePanel';
 
 import './index.scss';
 
