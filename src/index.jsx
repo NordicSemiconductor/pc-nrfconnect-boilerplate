@@ -62,8 +62,8 @@ export default () => (
         deviceSelect={<BoilerplateDeviceSelector />}
         sidePanel={<SidePanel />}
         panes={[
-            ['Hello', Hello],
-            ['Goodbye', Goodbye],
+            { name: 'Hello', Main: Hello },
+            { name: 'Goodbye', Main: Goodbye },
         ]}
     />
 );
