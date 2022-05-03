@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: LicenseRef-Nordic-4-Clause
  */
 
-// This file is imported by index.jsx, and may contain styles for the app.
+module.exports = require('pc-nrfconnect-shared/config/jest.config')();
