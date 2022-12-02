@@ -16,8 +16,8 @@
     "main": "dist/bundle.js",
     "files": [
         "dist/",
-        "resources/icon.png",
-        "LICENSE"
+        "LICENSE",
+        "resources/*"
     ],
     "scripts": {
         "watch": "run-p --silent --continue-on-error watch:*",
