@@ -31,7 +31,7 @@
         "check:lint": "eslint --color .",
         "check:types": "check-for-typescript tsc --noEmit --pretty",
         "check:license": "nrfconnect-license check",
-        "nordic-publish": "nordic-publish"
+        "nordic-publish": "node ./dist/nordic-publish.js"
     },
     "devDependencies": {
         "pc-nrfconnect-shared": "https://github.com/NordicSemiconductor/pc-nrfconnect-shared#v6.12.1"
