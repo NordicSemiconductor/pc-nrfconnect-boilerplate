@@ -6,11 +6,10 @@
 
 import React, { useEffect } from 'react';
 import { logger } from 'pc-nrfconnect-shared';
-import { bool } from 'prop-types';
 
 import './hello.scss';
 
-const Hello = ({ active }) => {
+const Hello: React.FC<{ active: boolean }> = ({ active }) => {
     useEffect(() => {
         if (active) {
             logger.info('Showing Hello pane');
@@ -23,9 +22,6 @@ const Hello = ({ active }) => {
     }, [active]);
 
     return <h3 className="title">Hello World</h3>;
-};
-Hello.propTypes = {
-    active: bool,
 };
 
 export default Hello;
