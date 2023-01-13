@@ -11,6 +11,6 @@ import Hello from './Hello';
 
 describe('Hello', () => {
     it('has a reliable rendering', () => {
-        expect(renderer.create(<Hello />)).toMatchSnapshot();
+        expect(renderer.create(<Hello active />)).toMatchSnapshot();
     });
 });

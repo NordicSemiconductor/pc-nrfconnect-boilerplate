@@ -35,6 +35,7 @@
         "prepare": "husky install"
     },
     "devDependencies": {
+        "@types/react-test-renderer": "18.0.0",
         "pc-nrfconnect-shared": "https://github.com/NordicSemiconductor/pc-nrfconnect-shared#v6.12.1"
     },
     "dependencies": {},

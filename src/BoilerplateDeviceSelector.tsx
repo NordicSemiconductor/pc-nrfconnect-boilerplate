@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: LicenseRef-Nordic-4-Clause
  */
 
-import { connect } from 'react-redux';
-import { DeviceSelector, logger } from 'pc-nrfconnect-shared';
+import React from 'react';
+import { Device, DeviceSelector, logger } from 'pc-nrfconnect-shared';
 
 /**
  * Configures which device types to show in the device selector.
@@ -34,11 +34,6 @@ const deviceListing = {
 // jprog: {},
 // };
 
-const mapState = () => ({
-    deviceListing,
-    // deviceSetup,
-});
-
 /*
  * In these callbacks you may react on events when users (de)selected a device.
  * Leave out callbacks you do not need.
@@ -46,19 +41,28 @@ const mapState = () => ({
  * Note that the callbacks releaseCurrentDevice and onDeviceIsReady
  * are only invoked, if a deviceSetup is defined.
  */
-const mapDispatch = (/* dispatch */) => ({
-    onDeviceSelected: device => {
-        logger.info(`Selected device with s/n ${device.serialNumber}`);
-    },
-    // releaseCurrentDevice: () => {
-    //     logger.info('Will set up selected device');
-    // },
-    // onDeviceIsReady: device => {
-    //     logger.info(`Device with s/n ${device.serialNumber} was set up with a firmware`);
-    // },
-    onDeviceDeselected: () => {
-        logger.info('Deselected device');
-    },
-});
+const onDeviceSelected = (device: Device) => {
+    logger.info(`Selected device with s/n ${device.serialNumber}`);
+};
+// const releaseCurrentDevice = () => {
+//     logger.info('Will set up selected device');
+// };
+// const onDeviceIsReady = (device: Device) => {
+//     logger.info(
+//         `Device with s/n ${device.serialNumber} was set up with a firmware`
+//     );
+// };
+const onDeviceDeselected = () => {
+    logger.info('Deselected device');
+};
 
-export default connect(mapState, mapDispatch)(DeviceSelector);
+export default () => (
+    <DeviceSelector
+        deviceListing={deviceListing}
+        // deviceSetup={deviceSetup}
+        onDeviceSelected={onDeviceSelected}
+        // releaseCurrentDevice={releaseCurrentDevice}
+        // onDeviceIsReady={onDeviceIsReady}
+        onDeviceDeselected={onDeviceDeselected}
+    />
+);
