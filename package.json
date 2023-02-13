@@ -17,7 +17,8 @@
     "files": [
         "dist/",
         "LICENSE",
-        "resources/*"
+        "resources/*",
+        "Changelog.md"
     ],
     "scripts": {
         "watch": "run-p --silent --continue-on-error watch:*",
@@ -36,7 +37,7 @@
     },
     "devDependencies": {
         "@types/react-test-renderer": "18.0.0",
-        "pc-nrfconnect-shared": "https://github.com/NordicSemiconductor/pc-nrfconnect-shared#v6.12.1"
+        "pc-nrfconnect-shared": "git+https://github.com/NordicSemiconductor/pc-nrfconnect-shared.git#v7"
     },
     "dependencies": {},
     "eslintConfig": {
