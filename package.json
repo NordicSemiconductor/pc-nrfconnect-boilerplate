@@ -13,6 +13,14 @@
     "engines": {
         "nrfconnect": ">=4.0.0"
     },
+    "nrfConnectForDesktop": {
+        "nrfutil": {
+            "device": [
+                "1.2.2"
+            ]
+        },
+        "html": "dist/index.html"
+    },
     "main": "dist/bundle.js",
     "files": [
         "dist/",
@@ -37,11 +45,10 @@
     },
     "devDependencies": {
         "@types/react-test-renderer": "18.0.0",
-        "pc-nrfconnect-shared": "git+https://github.com/NordicSemiconductor/pc-nrfconnect-shared.git#v7"
+        "@nordicsemiconductor/pc-nrfconnect-shared": "^91.0.0"
     },
-    "dependencies": {},
     "eslintConfig": {
-        "extends": "./node_modules/pc-nrfconnect-shared/config/eslintrc"
+        "extends": "./node_modules/@nordicsemiconductor/pc-nrfconnect-shared/config/eslintrc"
     },
-    "prettier": "./node_modules/pc-nrfconnect-shared/config/prettier.config.js"
+    "prettier": "./node_modules/@nordicsemiconductor/pc-nrfconnect-shared/config/prettier.config.js"
 }

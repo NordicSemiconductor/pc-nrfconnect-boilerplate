@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Group, SidePanel } from 'pc-nrfconnect-shared';
+import { Group, SidePanel } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
 export default () => (
     <SidePanel>

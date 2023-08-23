@@ -5,7 +5,7 @@
  */
 
 import React, { useEffect } from 'react';
-import { logger } from 'pc-nrfconnect-shared';
+import { logger } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
 import './hello.scss';
 
