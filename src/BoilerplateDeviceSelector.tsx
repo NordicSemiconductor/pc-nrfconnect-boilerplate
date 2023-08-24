@@ -5,7 +5,11 @@
  */
 
 import React from 'react';
-import { Device, DeviceSelector, logger } from 'pc-nrfconnect-shared';
+import {
+    Device,
+    DeviceSelector,
+    logger,
+} from '@nordicsemiconductor/pc-nrfconnect-shared';
 
 /**
  * Configures which device types to show in the device selector.

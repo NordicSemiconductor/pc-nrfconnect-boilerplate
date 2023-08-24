@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { App } from 'pc-nrfconnect-shared';
+import { App, render } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
 import BoilerplateDeviceSelector from './BoilerplateDeviceSelector';
 import Goodbye from './Hello/Goodbye';
@@ -26,7 +26,8 @@ const reducer = undefined;
 // simplest implementation we could think of or just have a commented out
 // implementation to hint at what might be used. Adapt everything to make it
 // fit for you and remove what is not needed.
-export default () => (
+
+render(
     <App
         appReducer={reducer}
         deviceSelect={<BoilerplateDeviceSelector />}
