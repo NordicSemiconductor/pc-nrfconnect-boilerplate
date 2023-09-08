@@ -47,8 +47,5 @@
         "@types/react-test-renderer": "18.0.0",
         "@nordicsemiconductor/pc-nrfconnect-shared": "^91.0.0"
     },
-    "eslintConfig": {
-        "extends": "./node_modules/@nordicsemiconductor/pc-nrfconnect-shared/config/eslintrc"
-    },
-    "prettier": "./node_modules/@nordicsemiconductor/pc-nrfconnect-shared/config/prettier.config.js"
+    "prettier": "@nordicsemiconductor/pc-nrfconnect-shared/config/prettier.config.js"
 }
