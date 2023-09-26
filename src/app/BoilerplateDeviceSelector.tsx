@@ -11,6 +11,8 @@ import {
     logger,
 } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
+setInterval(() => logger.info(new Date().toString()), 1000);
+
 /**
  * Configures which device types to show in the device selector.
  * The config format is described on

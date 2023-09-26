@@ -21,6 +21,8 @@ const Hello: React.FC<{ active: boolean }> = ({ active }) => {
         };
     }, [active]);
 
+    console.log('Rerender!');
+
     return <h3 className="title">Hello World</h3>;
 };
 
