@@ -16,7 +16,7 @@
     "nrfConnectForDesktop": {
         "nrfutil": {
             "device": [
-                "1.2.2"
+                "1.4.2"
             ]
         },
         "html": "dist/index.html"
@@ -44,8 +44,9 @@
         "prepare": "husky install"
     },
     "devDependencies": {
+        "@nordicsemiconductor/pc-nrfconnect-shared": "^113.0.0",
         "@types/react-test-renderer": "18.0.0",
-        "@nordicsemiconductor/pc-nrfconnect-shared": "^91.0.0"
+        "react-test-renderer": "^18.2.0"
     },
     "prettier": "@nordicsemiconductor/pc-nrfconnect-shared/config/prettier.config.js"
 }
