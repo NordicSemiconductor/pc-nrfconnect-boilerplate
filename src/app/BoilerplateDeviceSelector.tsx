@@ -18,7 +18,7 @@ import {
  */
 const deviceListing = {
     nordicUsb: true,
-    serialport: true,
+    serialPorts: true,
     jlink: true,
 };
 
