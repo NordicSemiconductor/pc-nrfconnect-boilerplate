@@ -7,12 +7,12 @@
 import React from 'react';
 import { App, render } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
-import BoilerplateDeviceSelector from './BoilerplateDeviceSelector';
-import Goodbye from './Hello/Goodbye';
-import Hello from './Hello/Hello';
-import SidePanel from './SidePanel';
+import BoilerplateDeviceSelector from './app/BoilerplateDeviceSelector';
+import SidePanel from './app/SidePanel';
+import Goodbye from './features/Hello/Goodbye';
+import Hello from './features/Hello/Hello';
 
-import './index.scss';
+import './app/index.scss';
 
 // If your app uses redux, then specify your root reducer here.
 // It will handle the slice of state under the name `app`.
