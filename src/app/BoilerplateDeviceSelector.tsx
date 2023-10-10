@@ -10,15 +10,16 @@ import {
     DeviceSelector,
     logger,
 } from '@nordicsemiconductor/pc-nrfconnect-shared';
+import { DeviceTraits } from '@nordicsemiconductor/pc-nrfconnect-shared/typings/generated/nrfutil';
 
 /**
  * Configures which device types to show in the device selector.
  * The config format is described on
  * https://github.com/NordicSemiconductor/nrf-device-lister-js.
  */
-const deviceListing = {
+const deviceListing: DeviceTraits = {
     nordicUsb: true,
-    serialport: true,
+    serialPorts: true,
     jlink: true,
 };
 
