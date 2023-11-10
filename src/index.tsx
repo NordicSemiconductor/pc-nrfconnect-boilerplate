@@ -27,6 +27,18 @@ const reducer = undefined;
 // implementation to hint at what might be used. Adapt everything to make it
 // fit for you and remove what is not needed.
 
+// Telemetry
+// ===========================
+// If you want to send telemetry data for this app to Nordic Semiconductor (if
+// users agree to it), enable the following line . Please note: Even without
+// this, some data about your app (e.g. that it was installed by someone) might
+// be sent to Nordic Semiconductor if users agree to this. If you strictly want
+// to prevent this, you need to create versions of pc-nrfconnect-shared and
+// pc-nrfconnect-launcher which disables all telemetry, compile such a variant
+// of the launcher and ship that to your users.
+//
+// usageData.enableTelemetry();
+
 render(
     <App
         appReducer={reducer}
