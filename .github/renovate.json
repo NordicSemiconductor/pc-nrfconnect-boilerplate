@@ -3,11 +3,10 @@
     "extends": ["config:recommended"],
     "packageRules": [
         {
+            "excludePackageNames": [
+                "@nordicsemiconductor/pc-nrfconnect-shared"
+            ],
             "enabled": false
-        },
-        {
-            "matchPackageNames": ["@nordicsemiconductor/pc-nrfconnect-shared"],
-            "enabled": true
         }
     ]
 }
