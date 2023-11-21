@@ -1,8 +1,10 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": ["config:recommended"],
-    "enabled": false,
     "packageRules": [
+        {
+            "enabled": false
+        },
         {
             "matchPackageNames": ["@nordicsemiconductor/pc-nrfconnect-shared"],
             "enabled": true
