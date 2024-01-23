@@ -37,7 +37,7 @@ const reducer = undefined;
 // pc-nrfconnect-launcher which disables all telemetry, compile such a variant
 // of the launcher and ship that to your users.
 //
-// usageData.enableTelemetry();
+// telemetry.enableTelemetry();
 
 render(
     <App
