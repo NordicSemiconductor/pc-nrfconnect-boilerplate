@@ -10,7 +10,7 @@ import {
     DeviceSelector,
     logger,
 } from '@nordicsemiconductor/pc-nrfconnect-shared';
-import { DeviceTraits } from '@nordicsemiconductor/pc-nrfconnect-shared/typings/generated/nrfutil';
+import { DeviceTraits } from '@nordicsemiconductor/pc-nrfconnect-shared/nrfutil/device';
 
 /**
  * Configures which device types to show in the device selector.
