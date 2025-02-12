@@ -9,7 +9,7 @@ import { Group, SidePanel } from '@nordicsemiconductor/pc-nrfconnect-shared';
 
 export default () => (
     <SidePanel>
-        <Group>
+        <Group heading="Info">
             The side panel can be used for configurations or information that
             are always shown to the side of the main view.
         </Group>
