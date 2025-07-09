@@ -1,0 +1,16 @@
+name: 'Docs: Publish to prod'
+
+# If this project has docs, set a correct bundle-name below (and also
+# in the other workflows).
+
+on:
+    workflow_dispatch:
+    workflow_call:
+
+jobs:
+    publish-docs-bundle:
+        uses: NordicSemiconductor/pc-nrfconnect-shared/.github/workflows/docs-publish.yml@main
+        with:
+            bundle-name: nrf-connect-boilerplate
+            release-type: prod
+        secrets: inherit

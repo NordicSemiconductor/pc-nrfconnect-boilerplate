@@ -22,4 +22,5 @@ jobs:
         with:
             source: ${{ inputs.source }}
             ref: ${{ inputs.ref }}
+            # doc_bundle_name: nrf-connect-boilerplate # If this project has documentation, uncomment this line and set the right bundle name for the docs
         secrets: inherit

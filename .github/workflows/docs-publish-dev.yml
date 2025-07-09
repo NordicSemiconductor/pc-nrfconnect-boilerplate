@@ -1,0 +1,21 @@
+name: 'Docs: Publish to dev'
+
+# If this project has docs, set a correct bundle-name below (and also
+# in the other workflows) and uncomment the push trigger.
+
+on:
+    # push:
+    #     branches:
+    #         - main
+    #     paths:
+    #         - doc/
+    #         - .github/workflows/docs-*.yml
+    workflow_dispatch:
+
+jobs:
+    publish-docs-bundle:
+        uses: NordicSemiconductor/pc-nrfconnect-shared/.github/workflows/docs-publish.yml@main
+        with:
+            bundle-name: nrf-connect-boilerplate
+            release-type: dev
+        secrets: inherit
